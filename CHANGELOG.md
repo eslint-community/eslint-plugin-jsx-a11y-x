@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.2.1
+
+### Patch Changes
+
+- [#106](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/pull/106) [`589b813`](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/commit/589b81350a2e8456ab9767e249cb13b9c612a86d) Thanks [@karlhorky](https://github.com/karlhorky)! - Fix default export types missing `meta` and `rules`.
+
+- [#105](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/pull/105) [`b3d9766`](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/commit/b3d97668e1e422ef9fdf665fdfbf484fbf616ccb) Thanks [@yungando](https://github.com/yungando)! - Remove deprecated rule `label-has-for` from provided configs and docs.
+
+- [#95](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/pull/95) [`308fad6`](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/commit/308fad6bc2c13223b8ebc3527398fdb88addf18f) Thanks [@jdufresne](https://github.com/jdufresne)! - Convert several files to TypeScript.
+
+- [#107](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/pull/107) [`8458b55`](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/commit/8458b558003837989cb44e3d0f30efe9ae56deb7) Thanks [@AdamMagued](https://github.com/AdamMagued)! - Remove documentation for removed rules `accessible-emoji` and `no-onchange`.
+
 ## 0.2.0
 
 ### Minor Changes
