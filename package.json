@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-jsx-a11y-x",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "description": "An ESLint plugin to apply various a11y rules to JSX templates",
   "repository": "git+https://github.com/es-tooling/eslint-plugin-jsx-a11y-x.git",
