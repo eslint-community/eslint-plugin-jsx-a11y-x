@@ -1,6 +1,6 @@
 # Contributing to `eslint-plugin-jsx-a11y-x`
 
-Thank you for your interest in `eslint-plugin-jsx-a11y-x`. [Here](https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) you can find the issues that are ready for contributions.
+Thank you for your interest in `eslint-plugin-jsx-a11y-x`. [Here](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) you can find the issues that are ready for contributions.
 
 ## TOC <!-- omit in toc -->
 
@@ -46,7 +46,7 @@ We are happy to welcome contributions from anyone willing to improve documentati
 - Add the upstream source for being able to sync main project changes back into your fork. For example, to configure an upstream remote repository for the `eslint-plugin-jsx-a11y` fork, run:
 
   ```sh
-  git remote add upstream https://github.com/es-tooling/eslint-plugin-jsx-a11y-x.git
+  git remote add upstream https://github.com/eslint-community/eslint-plugin-jsx-a11y-x.git
   ```
 
 - Run the tests and the build

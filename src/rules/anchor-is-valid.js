@@ -16,13 +16,13 @@ const { getProp, getPropValue } = jsxAstUtils;
 const allAspects = ['noHref', 'invalidHref', 'preferButton'];
 
 const preferButtonErrorMessage =
-  'Anchor used as a button. Anchors are primarily expected to navigate. Use the button element instead. Learn more: https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/blob/HEAD/docs/rules/anchor-is-valid.md';
+  'Anchor used as a button. Anchors are primarily expected to navigate. Use the button element instead. Learn more: https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/blob/HEAD/docs/rules/anchor-is-valid.md';
 
 const noHrefErrorMessage =
-  'The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/blob/HEAD/docs/rules/anchor-is-valid.md';
+  'The href attribute is required for an anchor to be keyboard accessible. Provide a valid, navigable address as the href value. If you cannot provide an href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/blob/HEAD/docs/rules/anchor-is-valid.md';
 
 const invalidHrefErrorMessage =
-  'The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/blob/HEAD/docs/rules/anchor-is-valid.md';
+  'The href attribute requires a valid value to be accessible. Provide a valid, navigable address as the href value. If you cannot provide a valid href, but still need the element to resemble a link, use a button and change it with appropriate styles. Learn more: https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/blob/HEAD/docs/rules/anchor-is-valid.md';
 
 const schema = {
   type: 'object',
@@ -53,7 +53,7 @@ const schema = {
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/anchor-is-valid.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/anchor-is-valid.md',
       description: 'Enforce all anchors are valid, navigable elements.',
     },
     schema: [schema],

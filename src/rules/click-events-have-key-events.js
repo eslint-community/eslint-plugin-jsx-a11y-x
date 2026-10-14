@@ -23,7 +23,7 @@ const errorMessage =
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/click-events-have-key-events.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/click-events-have-key-events.md',
       description:
         'Enforce a clickable non-interactive element has at least one keyboard event listener.',
     },

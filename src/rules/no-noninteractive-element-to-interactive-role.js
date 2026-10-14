@@ -23,7 +23,7 @@ const errorMessage =
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/no-noninteractive-element-to-interactive-role.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/no-noninteractive-element-to-interactive-role.md',
       description:
         'Disallow non-interactive elements being assigned interactive roles.',
     },

@@ -26,7 +26,7 @@ const errorMessage = (attr, role, tag, isImplicit) => {
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/role-supports-aria-props.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/role-supports-aria-props.md',
       description:
         'Enforce that elements with explicit or implicit roles defined contain only `aria-*` properties supported by that `role`.',
     },

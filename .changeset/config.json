@@ -3,7 +3,7 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "es-tooling/eslint-plugin-jsx-a11y-x"
+      "repo": "eslint-community/eslint-plugin-jsx-a11y-x"
     }
   ],
   "commit": false,

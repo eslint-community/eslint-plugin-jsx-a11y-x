@@ -35,7 +35,7 @@ const schema = {
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/anchor-ambiguous-text.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/anchor-ambiguous-text.md',
       description:
         'Enforce `<a>` text to not exactly match "click here", "here", "link", or "a link".',
     },

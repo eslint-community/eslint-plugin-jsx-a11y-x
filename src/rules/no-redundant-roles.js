@@ -20,7 +20,7 @@ const DEFAULT_ROLE_EXCEPTIONS = { nav: ['navigation'] };
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/no-redundant-roles.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/no-redundant-roles.md',
       description:
         'Enforce explicit role property is not the same as implicit/default role property on element.',
     },

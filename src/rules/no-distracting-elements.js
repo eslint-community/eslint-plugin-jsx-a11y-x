@@ -31,7 +31,7 @@ const schema = {
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/no-distracting-elements.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/no-distracting-elements.md',
       description: 'Enforce distracting elements are not used.',
     },
     schema: [schema],

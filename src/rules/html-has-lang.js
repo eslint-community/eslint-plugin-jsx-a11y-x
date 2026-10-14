@@ -17,7 +17,7 @@ const errorMessage = '<html> elements must have the lang prop.';
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/html-has-lang.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/html-has-lang.md',
       description: 'Enforce `<html>` element has `lang` prop.',
     },
     schema: [],

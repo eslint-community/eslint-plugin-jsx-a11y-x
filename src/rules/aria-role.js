@@ -41,7 +41,7 @@ const validRoles = new Set(
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/aria-role.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/aria-role.md',
       description:
         'Enforce that elements with ARIA roles must use a valid, non-abstract ARIA role.',
     },

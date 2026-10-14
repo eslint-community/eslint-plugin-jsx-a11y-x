@@ -55,7 +55,7 @@ const interactiveProps = [
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/interactive-supports-focus.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/interactive-supports-focus.md',
       description:
         'Enforce that elements with interactive handlers like `onClick` must be focusable.',
     },

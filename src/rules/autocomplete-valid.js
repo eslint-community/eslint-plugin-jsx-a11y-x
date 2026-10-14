@@ -29,7 +29,7 @@ const schema = {
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/autocomplete-valid.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/autocomplete-valid.md',
       description: 'Enforce that autocomplete attributes are used correctly.',
     },
     schema: [schema],

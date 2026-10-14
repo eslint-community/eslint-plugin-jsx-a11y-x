@@ -33,7 +33,7 @@ const schema = {
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/anchor-has-content.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/anchor-has-content.md',
       description: 'Enforce all anchors to contain accessible content.',
     },
     schema: [schema],

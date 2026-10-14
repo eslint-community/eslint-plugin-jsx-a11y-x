@@ -36,7 +36,7 @@ export default {
     docs: {
       description:
         'Enforces using semantic DOM elements over the ARIA `role` property.',
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/prefer-tag-over-role.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/prefer-tag-over-role.md',
     },
     schema: [],
   },

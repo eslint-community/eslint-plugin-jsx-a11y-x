@@ -23,7 +23,7 @@ const invalidAttributes = new Set(aria.keys().concat('role'));
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/aria-unsupported-elements.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/aria-unsupported-elements.md',
       description:
         'Enforce that elements that do not support ARIA roles, states, and properties do not have those attributes.',
     },

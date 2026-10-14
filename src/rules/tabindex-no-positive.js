@@ -16,7 +16,7 @@ const errorMessage = 'Avoid positive integer values for tabIndex.';
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/tabindex-no-positive.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/tabindex-no-positive.md',
       description: 'Enforce `tabIndex` value is not greater than zero.',
     },
     schema: [],

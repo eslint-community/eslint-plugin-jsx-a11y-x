@@ -44,7 +44,7 @@ export default defineConfig([
         'error',
         {
           pattern:
-            'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/{{name}}.md',
+            'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/{{name}}.md',
         },
       ],
       'eslint-plugin/require-meta-type': 'off',

@@ -17,7 +17,7 @@ const errorMessage =
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/no-access-key.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/no-access-key.md',
       description:
         'Enforce that the `accessKey` prop is not used on any element to avoid complications with keyboard commands used by a screen reader.',
     },

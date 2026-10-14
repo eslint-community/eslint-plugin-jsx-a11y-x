@@ -1,8 +1,8 @@
 # eslint-plugin-jsx-a11y-x
 
-[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/es-tooling/eslint-plugin-jsx-a11y-x/ci.yml?branch=main)](https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/actions/workflows/ci.yml?query=branch%3Amain)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/eslint-community/eslint-plugin-jsx-a11y-x/ci.yml?branch=main)](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/actions/workflows/ci.yml?query=branch%3Amain)
 [![npm](https://img.shields.io/npm/v/eslint-plugin-jsx-a11y-x.svg)](https://www.npmjs.com/package/eslint-plugin-jsx-a11y-x)
-[![GitHub Release](https://img.shields.io/github/release/es-tooling/eslint-plugin-jsx-a11y-x)](https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/releases)
+[![GitHub Release](https://img.shields.io/github/release/eslint-community/eslint-plugin-jsx-a11y-x)](https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/releases)
 
 Static AST checker for accessibility rules on JSX elements.
 

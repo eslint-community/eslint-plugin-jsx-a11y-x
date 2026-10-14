@@ -18,7 +18,7 @@ const errorMessage = 'The scope prop can only be used on <th> elements.';
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/scope.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/scope.md',
       description: 'Enforce `scope` prop is only used on `<th>` elements.',
     },
     schema: [],

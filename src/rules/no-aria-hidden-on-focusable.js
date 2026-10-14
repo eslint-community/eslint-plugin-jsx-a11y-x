@@ -17,7 +17,7 @@ const { getProp, getPropValue } = jsxAstUtils;
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/no-aria-hidden-on-focusable.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/no-aria-hidden-on-focusable.md',
       description:
         'Disallow `aria-hidden="true"` from being set on focusable elements.',
     },

@@ -29,7 +29,7 @@ const errorMessage = (name) => {
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/aria-props.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/aria-props.md',
       description: 'Enforce all `aria-*` props are valid.',
     },
     schema: [],

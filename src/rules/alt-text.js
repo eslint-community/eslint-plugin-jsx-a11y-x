@@ -234,7 +234,7 @@ const ruleByElement = {
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/alt-text.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/alt-text.md',
       description:
         'Enforce all elements that require alternative text have meaningful information to relay back to end user.',
     },

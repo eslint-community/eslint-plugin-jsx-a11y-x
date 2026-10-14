@@ -18,7 +18,7 @@ const errorMessage = 'lang attribute must have a valid value.';
 export default {
   meta: {
     docs: {
-      url: 'https://github.com/es-tooling/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/lang.md',
+      url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/lang.md',
       description: 'Enforce lang attribute has a valid value.',
     },
     schema: [],
