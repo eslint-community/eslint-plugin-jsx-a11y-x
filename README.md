@@ -42,6 +42,15 @@ namespace from `jsx-a11y/` to `jsx-a11y-x/`, and use `configs.recommended`
 or `configs.strict` instead of `flatConfigs`. Review the enabled rules and
 options before adopting the configuration.
 
+A migrated configuration may also need these changes:
+
+- Rename the `jsx-a11y` key in `settings` to `jsx-a11y-x`. Settings under
+  the old key are ignored.
+- Remove the deprecated rules `accessible-emoji`, `label-has-for`, and
+  `no-onchange`, which no longer exist.
+- Remove options from rules that take none. Rules with a fixed set of
+  options also reject unknown properties.
+
 <a id="usage"></a>
 
 ## Usage (`eslint.config.js`)
