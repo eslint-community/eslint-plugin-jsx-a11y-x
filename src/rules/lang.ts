@@ -7,6 +7,8 @@
 // Rule Definition
 // ----------------------------------------------------------------------------
 
+import type { Rule } from 'eslint';
+import type { JSXOpeningElement } from 'estree-jsx';
 import jsxAstUtils from 'jsx-ast-utils-x';
 import tags from 'language-tags';
 import getElementType from '../util/getElementType.js';
@@ -15,7 +17,7 @@ const { propName, getLiteralPropValue } = jsxAstUtils;
 
 const errorMessage = 'lang attribute must have a valid value.';
 
-export default {
+const rule: Rule.RuleModule = {
   meta: {
     docs: {
       url: 'https://github.com/eslint-community/eslint-plugin-jsx-a11y-x/tree/HEAD/docs/rules/lang.md',
@@ -33,7 +35,8 @@ export default {
           return;
         }
 
-        const { parent } = node;
+        // A JSXAttribute's parent is always a JSXOpeningElement.
+        const parent = node.parent as JSXOpeningElement;
         const type = elementType(parent);
         if (type && type !== 'html') {
           return;
@@ -54,7 +57,7 @@ export default {
           return;
         }
 
-        if (tags.check(value)) {
+        if (typeof value === 'string' && tags.check(value)) {
           return;
         }
 
@@ -66,3 +69,5 @@ export default {
     };
   },
 };
+
+export default rule;

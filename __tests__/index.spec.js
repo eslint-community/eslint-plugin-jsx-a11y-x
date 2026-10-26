@@ -9,7 +9,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const rules = fs
   .readdirSync(path.resolve(__dirname, '../src/rules/'))
-  .map((f) => path.basename(f, '.js'));
+  .map((f) => path.parse(f).name);
 
 test('all rule files should be exported by the plugin', async () => {
   for (const ruleName of rules) {
