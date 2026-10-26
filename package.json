@@ -52,7 +52,7 @@
     "damerau-levenshtein": "^1.0.8",
     "jsx-ast-utils-x": "^0.1.0",
     "language-tags": "^1.0.9",
-    "minimatch": "^10.2.5"
+    "picomatch": "^4.0.7"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.28.6",

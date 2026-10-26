@@ -26,9 +26,9 @@ importers:
       language-tags:
         specifier: ^1.0.9
         version: 1.0.9
-      minimatch:
-        specifier: ^10.2.5
-        version: 10.2.5
+      picomatch:
+        specifier: ^4.0.7
+        version: 4.0.7
     devDependencies:
       '@babel/eslint-parser':
         specifier: ^7.28.6
