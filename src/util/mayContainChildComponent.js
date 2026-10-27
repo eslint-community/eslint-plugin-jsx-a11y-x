@@ -6,13 +6,12 @@
  */
 
 import jsxAstUtils from 'jsx-ast-utils-x';
-import { minimatch } from 'minimatch';
 
 const { elementType: rawElementType } = jsxAstUtils;
 
 export default function mayContainChildComponent(
   root,
-  componentName,
+  isMatch,
   maxDepth = 1,
   elementType = rawElementType,
 ) {
@@ -32,7 +31,7 @@ export default function mayContainChildComponent(
         if (
           childNode.type === 'JSXElement' &&
           childNode.openingElement &&
-          minimatch(elementType(childNode.openingElement), componentName)
+          isMatch(elementType(childNode.openingElement))
         ) {
           return true;
         }

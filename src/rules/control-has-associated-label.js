@@ -8,6 +8,7 @@
 // ----------------------------------------------------------------------------
 
 import jsxAstUtils from 'jsx-ast-utils-x';
+import picomatch from 'picomatch';
 import getElementType from '../util/getElementType.js';
 import isDOMElement from '../util/isDOMElement.js';
 import isHiddenFromScreenReader from '../util/isHiddenFromScreenReader.js';
@@ -80,6 +81,7 @@ export default {
     const options = context.options[0];
     const { labelAttributes, controlComponents, ignoreElements, ignoreRoles } =
       options;
+    const isControlComponent = picomatch(controlComponents);
 
     const newIgnoreElements = new Set([...ignoreElements, ...ignoreList]);
 
@@ -125,7 +127,7 @@ export default {
           recursionDepth,
           labelAttributes,
           elementType,
-          controlComponents,
+          isControlComponent,
         );
       }
 

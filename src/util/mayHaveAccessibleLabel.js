@@ -6,7 +6,6 @@
  */
 
 import jsxAstUtils from 'jsx-ast-utils-x';
-import { minimatch } from 'minimatch';
 
 const { getPropValue, propName, elementType: rawElementType } = jsxAstUtils;
 
@@ -42,7 +41,7 @@ export default function mayHaveAccessibleLabel(
   maxDepth = 1,
   additionalLabellingProps = [],
   getElementType = rawElementType,
-  controlComponents = [],
+  isControlComponent = () => false,
 ) {
   function checkElement(node, depth) {
     // Bail when maxDepth is exceeded.
@@ -79,10 +78,7 @@ export default function mayHaveAccessibleLabel(
       const isReactComponent =
         name.length > 0 && name[0] === name[0].toUpperCase();
 
-      if (
-        isReactComponent &&
-        !controlComponents.some((control) => minimatch(name, control))
-      ) {
+      if (isReactComponent && !isControlComponent(name)) {
         return true;
       }
     }

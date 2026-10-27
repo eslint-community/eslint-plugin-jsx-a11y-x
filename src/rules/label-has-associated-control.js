@@ -8,7 +8,7 @@
 // ----------------------------------------------------------------------------
 
 import jsxAstUtils from 'jsx-ast-utils-x';
-import { minimatch } from 'minimatch';
+import picomatch from 'picomatch';
 import getElementType from '../util/getElementType.js';
 import mayContainChildComponent from '../util/mayContainChildComponent.js';
 import mayHaveAccessibleLabel from '../util/mayHaveAccessibleLabel.js';
@@ -101,39 +101,39 @@ export default {
     const options = context.options[0];
     const labelComponents = options.labelComponents;
     const assertType = options.assert;
-    const labelComponentNames = ['label'].concat(labelComponents);
+    const isLabelComponent = picomatch(['label', ...labelComponents]);
+    const isControlComponent = picomatch([
+      'input',
+      'meter',
+      'output',
+      'progress',
+      'select',
+      'textarea',
+      ...options.controlComponents,
+    ]);
     const elementType = getElementType(context);
 
     const rule = (node) => {
-      const isLabelComponent = labelComponentNames.some((name) =>
-        minimatch(elementType(node.openingElement), name),
-      );
-      if (!isLabelComponent) {
+      if (!isLabelComponent(elementType(node.openingElement))) {
         return;
       }
 
-      const controlComponents = [
-        'input',
-        'meter',
-        'output',
-        'progress',
-        'select',
-        'textarea',
-        ...options.controlComponents,
-      ];
       // Prevent crazy recursion.
       const recursionDepth = Math.min(options.depth, 25);
       const hasHtmlFor = validateHtmlFor(node.openingElement, context);
       // Check for multiple control components.
-      const hasNestedControl = controlComponents.some((name) =>
-        mayContainChildComponent(node, name, recursionDepth, elementType),
+      const hasNestedControl = mayContainChildComponent(
+        node,
+        isControlComponent,
+        recursionDepth,
+        elementType,
       );
       const hasAccessibleLabel = mayHaveAccessibleLabel(
         node,
         recursionDepth,
         options.labelAttributes,
         elementType,
-        controlComponents,
+        isControlComponent,
       );
 
       // Bail out immediately if we don't have an accessible label.
