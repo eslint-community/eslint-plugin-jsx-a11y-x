@@ -55,6 +55,8 @@ ruleTester.run('lang', rule, {
       { code: '<html lang="foo" />', errors: [expectedError] },
       { code: '<html lang="zz-LL" />', errors: [expectedError] },
       { code: '<html lang={undefined} />', errors: [expectedError] },
+      { code: '<html lang />', errors: [expectedError] },
+      { code: '<html lang={1} />', errors: [expectedError] },
       {
         code: '<Foo lang={undefined} />',
         settings: componentsSettings,

@@ -106,6 +106,13 @@ describe('getElementType', () => {
       'button',
       'returns the tag name provided by the componnet mapping if the polymorphic prop, "asChild", defined in the settings is not set',
     );
+
+    expect(
+      elementType(
+        JSXElementMock('span', [JSXAttributeMock('asChild', true)])
+          .openingElement,
+      ),
+    ).toBe('span', 'ignores the polymorphic prop if its value is not a string');
   });
 
   test('polymorphicPropName settings and explicitly defined polymorphicAllowList in context', () => {
