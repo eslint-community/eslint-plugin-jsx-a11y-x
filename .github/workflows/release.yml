@@ -43,6 +43,3 @@ jobs:
           commit-message: 'chore: release eslint-plugin-jsx-a11y-x'
           pr-title: 'chore: release eslint-plugin-jsx-a11y-x'
           publish-script: pnpm run release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_CONFIG_PROVENANCE: true
