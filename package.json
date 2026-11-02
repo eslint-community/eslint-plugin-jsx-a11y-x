@@ -57,7 +57,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.28.6",
     "@changesets/changelog-github": "^0.5.1",
-    "@changesets/cli": "^2.29.4",
+    "@changesets/cli": "^3.0.3",
     "@eslint/js": "^10.0.1",
     "@types/aria-query": "^5.0.4",
     "@types/damerau-levenshtein": "^1.0.2",
